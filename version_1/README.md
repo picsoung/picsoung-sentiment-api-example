@@ -1,16 +1,12 @@
 ## 3scale Example Sentiment API - V1.0: Basic API Method Calls and Authentication
 
-This is a very basic API that returns the sentiment value of a word or a sentence. You can define the sentiment value of any additional word that is not in the dictionary.
-
-The API is meant to serve an example of how you can easily create an API, and how you can use the free 3scale platform to control, manage and monitor the operations of the API so that you only have to do the fun part.
-
-The original sentiment values are taken from the dataset AFINN-111.txt from [Denmark Technical University](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) 
-
-The API is built using the GRAPE API Framework (https://github.com/intridea/grape) and the 3scale API plugin for ruby (https://github.com/3scale/3scale_ws_api_for_ruby / https://support.3scale.net/libraries).
+This is an example API which returns the sentiment value of a word or a sentence and is part of an Example series - find the other versions of the API which each illustrate something on the <a href="blob/directories/README.md">example homepage</a>. You can define the sentiment value of any additional word that is not in the dictionary.
 
 ## This Version
 
 This version contains 2 resources and 3 method calls each of which returns dummy content only. In addition it adds 3scale basic API call authentication to the system. 
+
+In this version of the API it's updated to use the GRAPE API Framework (https://github.com/intridea/grape) and the 3scale API plugin for ruby (https://github.com/3scale/3scale_ws_api_for_ruby / https://support.3scale.net/libraries).
 
 ## Adding 3scale
 
@@ -25,6 +21,8 @@ The demo uses 3scale authentication for API calls. To set this up you need a fre
 ## Configuration (Generic)
 
 Generic Setup is as follows: 
+
+ * Change to the directory of the version you want to execute for local execution (version_1, version_2 etc.)
 
  * Ensure you have the right base Gems available:
 
@@ -57,7 +55,10 @@ Generic Setup is as follows:
 
 ## Configuration (Heroku)
 
-If you're using Heroku, follow these instructions (based on https://devcenter.heroku.com/articles/quickstart, https://devcenter.heroku.com/articles/ruby):
+If you're using Heroku, follow these instructions (based on https://devcenter.heroku.com/articles/quickstart, https://devcenter.heroku.com/articles/ruby).
+
+Note that Heroku requires the config.ru, procfile etc. to be in the top level directory, so you'll need to make sure the symlinks there are all updated to point to the right version. When you check out the bundle they will always point to the latest version of the API. Check <a href="">here</a> for more information on symlinks.
+
 
  * Make sure you have the "Heroku toolbelt":https://toolbelt.heroku.com/ installed.
 
@@ -107,11 +108,11 @@ Using one of the methods above, your API should now be ready for use.
 
 Call one method of the API with curl (or with your browser if you want)
 
-	curl -X GET -g "http://localhost:8080/v1/words/fantastic.json
+	curl -X GET -g "http://localhost:5000/v1/words/fantastic.json
 
 The above call returns 
 
-	{"word:"fantastic","sentiment":4}
+	{"word:"fantastic","sentiment":"unkown"}
 
 
 
