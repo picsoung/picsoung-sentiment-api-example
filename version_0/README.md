@@ -2,7 +2,7 @@
 
 This is a very basic API that returns the sentiment value of a word or a sentence. You can define the sentiment value of any additional word that is not in the dictionary.
 
-The original sentiment values are taken from the dataset AFINN-111.txt from [Denmark Technical University](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) 
+The original sentiment values are taken from the dataset AFINN-111.txt from [Technical University of Denmark](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) 
 
 ## Version 0 
 
