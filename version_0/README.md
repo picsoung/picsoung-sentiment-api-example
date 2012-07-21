@@ -2,10 +2,11 @@
 
 This is a very basic API that returns the sentiment value of a word or a sentence. You can define the sentiment value of any additional word that is not in the dictionary.
 
-The API is meant to serve an example of how you can easily create an API, and how you can use the free 3scale platform to control, manage and monitor the operations of the API so that you only have to do the fun part.
-
 The original sentiment values are taken from the dataset AFINN-111.txt from [Denmark Technical University](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) 
 
+## Version 0 
+
+This is version 0. See the full version lists [here](https://github.com/3scale/sentiment-api-example/blob/master/README.md).
 
 ## Usage
 

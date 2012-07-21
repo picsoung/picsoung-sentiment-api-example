@@ -12,4 +12,4 @@ The original sentiment values are taken from the dataset AFINN-111.txt from [Den
 
 ##Notes
 
- * From Version 1 onwards the code can be run on Heroku but to facilitate this config.ru, procfile etc. need to be in the top level directory. This is done using symlinks. If you want to run a specific version locally simply change to that directory. If you want to run a version on heroku, update the symlinks to point to the right directory and then run.
+ * From Version 1 onwards the code can be run on Heroku but to facilitate this config.ru, procfile etc. need to be in the top level directory. This is done using symlinks. If you want to run a specific version locally simply change to that directory. If you want to run a version on Heroku, update the symlinks to point to the right directory and then run.

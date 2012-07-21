@@ -1,10 +1,12 @@
-## 3scale Example Sentiment API - V1.0: Basic API Method Calls and Authentication
+## 3scale Example Sentiment API - V1.0 & V1.1: Basic API Method Calls and Authentication
 
 This is an example API which returns the sentiment value of a word or a sentence and is part of an Example series - find the other versions of the API which each illustrate something on the <a href="blob/directories/README.md">example homepage</a>. You can define the sentiment value of any additional word that is not in the dictionary.
 
-## This Version
+##  Version 1
 
-This version contains 2 resources and 3 method calls each of which returns dummy content only. In addition it adds 3scale basic API call authentication to the system. 
+This is version 1. See the full version lists [here](https://github.com/3scale/sentiment-api-example/blob/master/README.md).
+
+This version contains 2 resources and 3 method calls each of which returns dummy content only. In addition it adds 3scale basic API call authentication to the system.
 
 In this version of the API it's updated to use the GRAPE API Framework (https://github.com/intridea/grape) and the 3scale API plugin for ruby (https://github.com/3scale/3scale_ws_api_for_ruby / https://support.3scale.net/libraries).
 
