@@ -16,6 +16,7 @@ GEM
     multi_json (1.3.6)
     multi_xml (0.5.1)
     nokogiri (1.5.4)
+    pg (0.16.0)
     rack (1.4.1)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
@@ -31,5 +32,6 @@ DEPENDENCIES
   3scale_client
   grape
   json
+  pg
   rack
   thin
